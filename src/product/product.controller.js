@@ -1,6 +1,6 @@
 import Product from '../product/product.model.js';
 import Category from '../category/category.model.js';
-import User from '../user/user.model.js';
+
 
 // Admin: Crear un nuevo producto
 export const createProduct = async (req, res) => {

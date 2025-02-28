@@ -9,6 +9,8 @@ import { limiter } from '../middlewares/rate.limit.js'
 import userRoutes from '../src/user/user.routes.js'
 import productRoutes from '../src/product/product.routes.js'
 import categoryRoutes from '../src/category/category.routes.js'
+import cartRoutes from '../src/cart/cart.routes.js'
+import invoiceRoutes from '../src/invoice/invoice.routes.js'
 import { defaultCategory } from '../src/category/category.controller.js'
 
 const configs = (app)=>{
@@ -25,6 +27,8 @@ const routes = (app)=>{
     app.use('/v1/user', userRoutes)
     app.use('/v1/product', productRoutes)
     app.use('/v1/category', categoryRoutes)
+    app.use('/v1/cart',cartRoutes)
+    app.use('/v1/invoice',invoiceRoutes)
 }
 
 // ESModulesno acepta exports.
